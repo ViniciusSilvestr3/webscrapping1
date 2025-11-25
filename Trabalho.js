@@ -1,4 +1,4 @@
-header('Access-Control-Allow-Origin: *'); 
+
 function taFeito(doc, containerId) {
   let noticia = doc.querySelectorAll(".theme");
   let ul = document.createElement("ul");
@@ -32,7 +32,7 @@ function showTab(id) {
 
 function g3Volei() {
   showTab("voleibol");
-  fetch("https://proxy.corsfix.com/?https://ge.globo.com/volei/")
+  fetch("https://cors-anywhere.com/https://ge.globo.com/volei/")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Chamada HTTP Falhou");
@@ -49,7 +49,7 @@ function g3Volei() {
 
 function g3Basquete() {
   showTab("basquete");
-  fetch("https://proxy.corsfix.com/?https://ge.globo.com/basquete/")
+  fetch("https://cors-anywhere.com/https://ge.globo.com/basquete/")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Chamada HTTP Falhou");
@@ -67,7 +67,7 @@ function g3Basquete() {
 function g3Brasileirao() {
   showTab("brasileirao");
   fetch(
-    "https://proxy.corsfix.com/?https://ge.globo.com/futebol/brasileirao-serie-a/"
+    "https://cors-anywhere.com/https://ge.globo.com/futebol/brasileirao-serie-a/"
   )
     .then((response) => {
       if (!response.ok) {
