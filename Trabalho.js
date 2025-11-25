@@ -1,3 +1,4 @@
+header('Access-Control-Allow-Origin: *'); 
 function taFeito(doc, containerId) {
   let noticia = doc.querySelectorAll(".theme");
   let ul = document.createElement("ul");
