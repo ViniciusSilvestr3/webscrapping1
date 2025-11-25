@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background: #f5f7fb;
+        color: #222;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 18px;
+        background: #fff;
+        border-bottom: 1px solid #e3e8ef;
+      }
+      .tabs {
+        display: flex;
+        gap: 8px;
+      }
+      .tab-button {
+        background: transparent;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #374151;
+      }
+      .tab-button:hover {
+        background: #eef2ff;
+      }
+      .tab-button.active {
+        background: #2563eb;
+        color: #fff;
+        box-shadow: 0 6px 18px rgba(37, 99, 235, 0.12);
+      }
+      .container {
+        padding: 18px;
+        max-width: 1000px;
+        margin: 24px auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+      }
+      .tab-content {
+        display: none;
+      }
+      .tab-content.active {
+        display: block;
+      }
+      ul.summaries {
+        padding-left: 1rem;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+      }
+      table th,
+      table td {
+        border: 1px solid #e6eef6;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="tabs">
+        <button id="btn-voleibol" class="tab-button" onclick="g3Volei()" style="background-color: rgb(223, 142, 22);">
+          Vôlei
+        </button>
+        <button id="btn-basquete" class="tab-button" onclick="g3Basquete()" style="background-color: rgb(138, 28, 28); color: white;">
+          Basquete
+        </button>
+        <button
+          id="btn-brasileirao"
+          class="tab-button"
+          onclick="g3Brasileirao()"
+          style="background-color: rgb(22, 82, 223); color: white;"
+        >
+          Brasileirão
+        </button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="voleibol" class="tab-content">
+        <p>Carregando...</p>
+      </section>
+      <section id="basquete" class="tab-content">
+        <p>Carregando...</p>
+      </section>
+      <section id="brasileirao" class="tab-content">
+        <p>Carregando...</p>
+      </section>
+
+    </main>
+
+    <script src="Trabalho.js"></script>
+  </body>
+</html>
